@@ -1,0 +1,25 @@
+{
+  "name": "simple-cron",
+  "version": "0.0.1",
+  "description": "todo",
+  "main": "lib/SimpleCron.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nrempel/simple-cron.git"
+  },
+  "author": "Nicholas Rempel <nbrempel@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nrempel/simple-cron/issues"
+  },
+  "homepage": "https://github.com/nrempel/simple-cron#readme",
+  "dependencies": {
+    "cron-parser": "^2.3.1",
+    "lodash": "^4.17.4",
+    "moment": "^2.17.1",
+    "uuid": "^3.0.1"
+  }
+}
