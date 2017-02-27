@@ -4,7 +4,7 @@
   "description": "todo",
   "main": "lib/SimpleCron.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "semistandard --verbose | snazzy && jest"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,18 @@
     "cron-parser": "^2.3.1",
     "lodash": "^4.17.4",
     "moment": "^2.17.1",
+    "sinon": "^1.17.7",
     "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "jest": "^19.0.2",
+    "semistandard": "^9.2.1",
+    "snazzy": "^6.0.0"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "moduleDirectories": [
+      "node_modules"
+    ]
   }
 }
