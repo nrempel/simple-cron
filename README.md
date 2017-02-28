@@ -16,7 +16,7 @@ As per the cron man page, in the event of a system time change will do the the f
 ```
 npm install --save simple-cron
 ```
-
+g
 or
 
 ```
@@ -94,7 +94,7 @@ Cancels a scheduled job so it no longer runs on an interval. Requires you to pro
 
 ## Testing
 
-SimpleCron has good test coverage. To run the tests, clone the repo then do this:
+SimpleCron has thorough test coverage. To run the tests, clone the repo then do this:
 
 ```
 npm i && npm test
