@@ -1,7 +1,7 @@
 {
   "name": "simple-cron",
-  "version": "0.5.0",
-  "description": "todo",
+  "version": "0.5.1",
+  "description": "SimpleCron is a simple cron runner.",
   "main": "lib/SimpleCron.js",
   "scripts": {
     "test": "semistandard --verbose | snazzy && jest"
@@ -29,6 +29,12 @@
     "semistandard": "^9.2.1",
     "snazzy": "^6.0.0"
   },
+  "keywords": [
+    "cron",
+    "crontab",
+    "runner",
+    "scheduler"
+  ],
   "jest": {
     "collectCoverage": true,
     "moduleDirectories": [
