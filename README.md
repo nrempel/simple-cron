@@ -30,7 +30,7 @@ Here's a contrived example:
 ```javascript
 // Instantiate SimpleCron
 const SimpleCron = require('simple-cron');
-const cron = new SimpleCron();
+const cron = new SimpleCron(); // Takes an optional parameter to define runInterval
 
 // SimpleCron is also an event emitted so you can
 // easily tell when events occur.
@@ -65,6 +65,32 @@ cron.cancel(emailJobId);
 cron.stop().then(() => { console.log('Shutdown complete.'); });
 
 ```
+
+SimpleCon uses [cron-parser](https://github.com/harrisiirak/cron-parser) to handle cron expressions.
+
+## API Reference
+
+#### `SimpleCron([options])`
+
+Constructor. Returns reference to cron instance. Take optional options object containing the following keys:
+
+- `runInterval`: The frequency in milliseconds for which SimpleCron will check to run jobs. Defaults to `100`.
+
+#### `cron.run()`
+
+Runs SimpleCron. Starts running any scheduled jobs.
+
+#### `cron.stop()`
+
+Stops SimpleCron. Returns a promise that resolves when SimpleCron has finished stopping.
+
+#### `cron.schedule(expression, function)`
+
+Schedules a function to be called at an interval. Returns an id for this scheduled job.
+
+#### `cron.cancel(id)`
+
+Cancels a scheduled job so it no longer runs on an interval. Requires you to provide the id returned by `cron.schedule()`.
 
 ## Testing
 
