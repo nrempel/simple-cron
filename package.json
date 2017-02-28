@@ -1,6 +1,6 @@
 {
   "name": "simple-cron",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "SimpleCron is a simple cron runner.",
   "main": "lib/SimpleCron.js",
   "scripts": {

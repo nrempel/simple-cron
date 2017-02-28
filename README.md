@@ -16,9 +16,7 @@ As per the cron man page, in the event of a system time change will do the the f
 ```
 npm install --save simple-cron
 ```
-g
 or
-
 ```
 yarn add simple-cron
 ```
@@ -32,7 +30,7 @@ Here's a contrived example:
 const SimpleCron = require('simple-cron');
 const cron = new SimpleCron(); // Takes an optional parameter to define runInterval
 
-// SimpleCron is also an event emitted so you can
+// SimpleCron is also an event emitter so you can
 // easily tell when events occur.
 // Valid events are run, stop, schedule, cancel, invoke
 cron.on('invoke', (jobId) => {
@@ -91,6 +89,16 @@ Schedules a function to be called at an interval. Returns an id for this schedul
 #### `cron.cancel(id)`
 
 Cancels a scheduled job so it no longer runs on an interval. Requires you to provide the id returned by `cron.schedule()`.
+
+### Events
+
+SimpleCron extends EventEmitter and emits the following events:
+
+- run
+- stop
+- cancel(id)
+- schedule(id)
+- invoke(id)
 
 ## Testing
 
