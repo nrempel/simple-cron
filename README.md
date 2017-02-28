@@ -25,8 +25,8 @@ const cron = new SimpleCron();
 
 // SimpleCron is also an event emitted so you can
 // easily tell when events occur.
-// Valid events are start, stop, schedule, cancel, run
-cron.on('run', (jobId) => {
+// Valid events are run, stop, schedule, cancel, invoke
+cron.on('invoke', (jobId) => {
   console.log(`job '${jobId}' just ran!`);
 });
 
