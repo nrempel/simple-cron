@@ -1,3 +1,5 @@
+[![NPM](https://nodei.co/npm/simple-cron.png)](https://nodei.co/npm/simple-cron/)
+
 # SimpleCron
 
 SimpleCron is a simple cron runner. I've tried more or less to adhere to the functionality of the traditional unix [cron utility](http://man7.org/linux/man-pages/man8/cron.8.html). This includes the behaviour during a system time change.
